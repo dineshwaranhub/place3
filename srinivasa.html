@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinivasa Mahal</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #808080; /* Grey color for the 3D effect */
+            transform-style: preserve-3d;
+            animation: moveBackground 8s infinite linear;
+            z-index: -1;
+        }
+
+        header, footer {
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            color: #fff;
+            padding: 5px 0; /* Reduced padding for smaller header/footer */
+            position: relative;
+            z-index: 1;
+        }
+
+        header h4, footer h4 {
+            margin: 0;
+            font-size: 1em; /* Smaller font size for header and footer */
+            text-transform: uppercase;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap into new rows */
+            justify-content: space-between; /* Distribute space between the cards */
+            gap: 20px; /* Space between cards */
+            padding: 20px;
+        }
+
+        .card {
+            width: 30%;  /* 3 cards per row (100% / 3 ≈ 30%) */
+            background-color: #fff;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column; /* Ensure cards stack vertically */
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Slight scale effect on hover */
+        }
+
+        .card img {
+            width: 100%; /* Make the image fill the card */
+            height: 200px; /* Set a fixed height for images */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .text {
+            padding-top: 10px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #ffcc00;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+
+        /* Mobile and Small Screen Styles */
+        @media (max-width: 768px) {
+            .card {
+                width: 45%;  /* Adjust card width for medium screens (2 cards per row) */
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 90%; /* Cards will take up nearly full width on mobile (1 card per row) */
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <header>
+        <h4>Welcome to Srinivasa Mahal</h4>
+    </header>
+
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="srini.jpg" alt="Eco Image">
+            <div class="text">
+                <h1>𝙎𝙍𝙄𝙉𝙄𝙑𝘼𝙎𝘼 𝙈𝘼𝙃𝘼𝙇</h1>
+                <h2><a href="https://maps.app.goo.gl/CbdEwX5g4m1hKuvG9" style="color: #ffcc00;">𝙇𝙤𝙘𝙖𝙩𝙞𝙤𝙣</a></h2>
+                <p>Srinivasa Mahal, Vanjipalayam, Tirupur. Established in 2013, rated 4.0 stars based on 662 reviews.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="srini.jpg" alt="Eco Image">
+            <div class="text">
+                <h1>Event Spaces</h1>
+                <h2>Perfect for All Occasions</h2>
+                <p>We offer versatile spaces for weddings, corporate events, and more!</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="srini.jpg" alt="Eco Image">
+            <div class="text">
+                <h1>Our Services</h1>
+                <h2>Catering & Decorations</h2>
+                <p>From delicious catering to impeccable decorations, we handle everything for your special day.</p>
+            </div>
+        </div>
+
+        <!-- Additional Cards can be added here similarly -->
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="srini.jpg" alt="Eco Image">
+            <div class="text">
+                <h1>Banquet Hall</h1>
+                <h2>Elegant & Spacious</h2>
+                <p>Our banquet hall offers a perfect venue for large gatherings with modern amenities.</p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="srini.jpg" alt="Eco Image">
+            <div class="text">
+                <h1>Outdoor Events</h1>
+                <h2>Scenic Settings</h2>
+                <p>Celebrate in the open air with scenic backdrops and nature surrounding you.</p>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="srini.jpg" alt="Eco Image">
+            <div class="text">
+                <h1>Our Team</h1>
+                <h2>Experienced & Friendly</h2>
+                <p>Our professional team ensures everything runs smoothly from start to finish.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; DineH catering management system</p>
+    </footer>
+</body>
+</html>
